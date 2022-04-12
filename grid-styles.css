@@ -1,0 +1,1145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'titillium';
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url("titillium/TitilliumWeb-Regular.ttf");
+    font-family: 'Tangerine';
+    src: url("tangerine/Tangerine-Regular.ttf");
+}
+
+body{
+    width: 100%;
+    height:100vh
+}
+@media (min-width:1024px) {
+.gridContainerHome{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: .1fr .5fr 3fr .5fr;
+}
+
+header{
+    grid-area: header;
+    background-color: #d0a5dd;
+}
+
+nav{
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8c4f3;
+}
+
+main{
+    grid-area: main;
+    margin-bottom: 4rem;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #e8c4f3;
+}
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 0;
+}
+
+#isologo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.marca{
+    font-family: 'tangerine';
+    font-size: 70px;
+    text-align:center;
+    color: #9830dd;
+}
+
+nav ul{
+    background-color: #e8c4f3;
+    list-style-type: none;
+}
+
+nav ul li{
+    display:inline-block;
+    padding: 10px;
+    margin: 0px 45px 0px 45px;
+    background-color: #e8c4f3;
+    font-size: 1.5rem;
+}
+
+ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #9830dd;
+}
+
+nav a:hover{
+    opacity: 0.3;
+}
+
+#portada{
+    width: 100%;
+}
+
+.portada{
+    width: 100%;
+    height: 65vh;
+}
+
+.tituloInicio{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #9830dd;
+    font-style: oblique;
+}
+
+.descripCandy{
+    font-size:large;
+    color:#d0a5dd;
+    font-weight: bold;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+#advantageCards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgVentaja{
+    width: 250px;
+    height: 300px;
+}
+
+.articulo{
+    margin: 0 4rem 0 4rem;
+}
+
+.nombreVentaja{
+    text-align: center;
+    color: #9830dd;
+}
+
+.descripVentaja{
+    color:#d0a5dd;
+    font-weight: bolder;
+}
+
+#footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 3rem;
+}
+
+.derechos{
+    font-size: 12px;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 0 5px 0 5px;
+}
+
+footer img{
+    width: 50px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+
+/*********** Hoja Productos ******************/
+
+.gridContainerProduct{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: .1fr .5fr 3fr .5fr;
+}
+
+
+.tituloProduct{
+    display: inline-block;
+    position: relative;
+    left: 35%;
+    padding: 2rem;
+    font-size: larger;
+    color: #9830dd;
+    font-weight: bold;
+}
+
+.tituloCategoria{
+     margin-bottom: 2rem;
+     color: #9830dd;
+}
+
+.cardProduct{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgProduct{
+    width: 15rem;
+    height: 15rem;
+}
+
+/*******************Hoja Nosotros*************************/
+.gridContainerNosotros{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: .1fr .5fr 3fr .5fr;
+}
+
+.tituloNosotros{
+    margin: 2rem 1rem;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+#descripNosotros{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+#descripEmprendimiento{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+.historiaPersonal{
+    text-align: justify;
+    padding: 4rem 4rem 4rem 0;
+    line-height: 1.5rem;
+}
+
+.historiaEmprendimiento{
+    text-align: justify;
+    padding: 4rem 0 4rem 4rem;
+    line-height: 1.5rem;
+}
+
+.fotoPersonal{
+    width: 40%;
+    height: 30vh;
+}
+
+.fotoEmprendimiento{
+    width: 40%;
+    height: 30vh;
+}
+
+
+/****************** Hoja Ustedes *********************/
+.gridContainerUstedes{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: .1fr .5fr 3fr .5fr;
+}
+
+.tituloFeedback{
+    color: #9830dd;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.categoriaFeedback{
+    color: #9830dd;
+    font-weight: bold;
+    margin: 3rem;
+}
+
+#feedbackCard{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.articuloFeedback {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px #d0a5dd ;
+    align-items: center;
+    width: 250px;
+    text-align: center;
+}
+
+.avatar{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.grillaGaleria{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto, minmax(250px , 1fr)) ;
+    gap: 10px;
+}
+
+.fotoGaleria{
+    width: auto;
+    height: 30vh;
+}
+
+/***********  Hoja Contacto ***************/
+.gridContainerContacto{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+}
+
+.tituloContacto{
+    text-align: center;
+    color: #9830dd;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 20px;
+    margin: 4rem auto 0.5rem;
+    background-color:#e8c4f3;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+input , textarea{
+    border: none;
+    height: 20px;
+}
+
+textarea{
+    min-height: 250px;
+    max-height: 350px;
+    max-width: 100%;
+}
+
+#boton{
+    font-size: 15px;
+    text-align: center;
+    color: #9830dd;
+    font-weight: bolder;
+}
+
+#boton:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+}
+
+
+
+/**********************
+        TABLET
+**********************/
+
+
+@media (min-width:480px) and (max-width:1023px) {
+    .gridContainerHome{
+        display:grid;
+        grid-template-areas:
+        "header"
+        "menu"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 5fr 1fr;
+    }
+    
+    header{
+        grid-area: header;
+        background-color: #d0a5dd;
+    }
+    
+    nav{
+        grid-area: menu;
+    }
+    
+    main{
+        grid-area: main;
+        margin-bottom: 1rem;
+    }
+    
+    footer{
+        grid-area: footer;
+        background-color: #e8c4f3;
+    }
+    
+    
+    .logo{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: 0;
+    }
+    
+    #isologo{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    
+    .marca{
+        font-family: 'tangerine';
+        font-size: 3rem;
+        text-align:center;
+        color: #9830dd;
+    }
+    
+    nav ul{
+        background-color: #e8c4f3;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul li{
+        background-color: #e8c4f3;
+        font-size: 70%;
+        display: inline-block;
+        padding: .25rem;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #9830dd;
+    }
+    
+    nav a:hover{
+        opacity: 0.3;
+    }
+    
+    #portada{
+        width: 100%;
+    }
+    
+    .portada{
+        width: 100%;
+        height: 15rem;
+    }
+    
+    .tituloInicio{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #9830dd;
+        font-style: oblique;
+    }
+    
+    .descripCandy{
+        font-size:small;
+        color:#d0a5dd;
+        font-weight: bold;
+        line-height: 1rem;
+        margin-bottom: 2rem;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    
+    #advantageCards{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .imgVentaja{
+        width: 70%;
+        height: 10rem;
+
+    }
+    
+    .articulo{
+        margin: 0 4rem 0 4rem;
+    }
+
+    .boxVentaja{
+        display: flex;
+        flex-direction: column;
+        margin: 5rem;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .nombreVentaja{
+        text-align: center;
+        color: #9830dd;
+        font-size: 1.3rem;
+    }
+    
+    .descripVentaja{
+        color:#d0a5dd;
+        font-weight: bolder;
+        font-size: .8rem;
+        text-align: center;
+    }
+    
+    #footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    }
+    
+    .derechos{
+        font-size: .8rem;
+    }
+    
+    footer ul li{
+        display: none;
+        margin: 0 5px 0 5px;
+    }
+    
+    footer img{
+        width: 2rem;
+        border-radius: 70%;
+        padding: 5px;
+        margin: 0 1rem  ;
+    }
+   
+    
+    /* ********** Hoja Productos*****************/
+    
+    .gridContainerProduct{
+        display:grid;
+        grid-template-areas:
+        "header"
+        "menu"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 5fr 1fr;
+    }
+    
+    
+    .tituloProduct{
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        font-size: larger;
+        color: #9830dd;
+        font-weight: bold;
+    }
+    
+    .tituloCategoria{
+         margin-bottom: 2rem;
+         color: #9830dd;
+    }
+    
+    .cardProduct{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cajaProduct{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .imgProduct{
+        width: 10rem;
+        height: 10rem;
+    }
+
+/********************* HOJA NOSOTROS **********************/
+.gridContainerNosotros{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: .1fr .5fr 3fr .5fr;
+}
+
+.tituloNosotros{
+    margin: 2rem 1rem;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+#descripNosotros{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:center;
+    align-items: center;
+    margin: 1rem 5rem;
+}
+
+#descripEmprendimiento{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 1rem 5rem;
+}
+
+.historiaPersonal{
+    text-align: justify;
+    padding: auto;
+    line-height: 1.5rem;
+}
+
+.historiaEmprendimiento{
+    text-align: justify;
+    padding: auto;
+    line-height: 1.5rem;
+}
+
+.fotoPersonal{
+    width: 40%;
+    height: 30vh;
+    margin-bottom: 2rem;
+}
+
+.fotoEmprendimiento{
+    width: 40%;
+    height: 30vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/*************** Hoja Ustedes***************/
+
+.gridContainerUstedes{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: .1fr .5fr 3fr .5fr;
+}
+
+.tituloFeedback{
+    color: #9830dd;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.categoriaFeedback{
+    color:#d0a5dd;
+    font-weight: bold;
+    margin: 3rem;
+}
+
+#feedbackCard{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5rem 1rem;
+}
+
+.articuloFeedback {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px #d0a5dd ;
+    align-items: center;
+    width: 13rem;
+    text-align: center;
+}
+
+.avatar{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.grillaGaleria{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 50% 20% auto;
+    gap: 10px;
+}
+
+.fotoGaleria{
+    width: auto;
+    height: 30vh;
+}
+
+/***********  Hoja Contacto ***************/
+.gridContainerContacto{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+}
+
+.tituloContacto{
+    text-align: center;
+    color: #9830dd;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 20px;
+    margin: 4rem auto 0.5rem;
+    background-color:#e8c4f3;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+input , textarea{
+    border: none;
+    height: 20px;
+}
+
+textarea{
+    min-height: 250px;
+    max-height: 350px;
+    max-width: 100%;
+}
+
+#boton{
+    font-size: 15px;
+    text-align: center;
+    color: #9830dd;
+    font-weight: bolder;
+}
+
+#boton:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+}
+
+
+
+
+/****************************
+            SMARTPHONE
+****************************/
+
+@media (max-width:479px) {
+    .gridContainerHome{
+        display:grid;
+        grid-template-areas:
+        "header"
+        "menu"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 10fr 1fr 1fr .1fr;
+    }
+    
+    header{
+        grid-area: header;
+        background-color: #d0a5dd;
+    }
+    
+    nav{
+        grid-area: menu;
+    }
+    
+    main{
+        grid-area: main;
+    }
+    
+    footer{
+        grid-area: footer;
+        background-color: #e8c4f3;
+    }
+    
+    
+    .logo{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: 0;
+        padding: 1rem;
+    }
+    
+    #isologo{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    
+    .marca{
+        font-family: 'tangerine';
+        font-size: 2rem;
+        text-align:center;
+        color: #9830dd;
+    }
+    
+    nav ul{
+        background-color: #e8c4f3;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+
+    }
+    
+    nav ul li{
+        background-color: #e8c4f3;
+        font-size: 70%;
+        display: inline-block;
+        padding: .5rem;
+        position: relative;
+        
+    }
+    
+    ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #9830dd;
+    }
+    
+    nav a:hover{
+        opacity: 0.3;
+    }
+    
+    #portada{
+        width: 100%;
+    }
+    
+    .portada{
+        width: 100%;
+        height: 10rem;
+    }
+    
+    .tituloInicio{
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 1rem 0;
+        color: #9830dd;
+        font-style: oblique;
+    }
+    
+    .descripCandy{
+        font-size:small;
+        color:#d0a5dd;
+        font-weight: bold;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+        padding: 5px;
+    }
+    
+    
+    #advantageCards{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgVentaja{
+        width: 100%;
+        height: 10rem;
+    }
+    
+    .boxVentaja{
+        margin: 1rem 3rem 1rem 3rem;
+    }
+    
+    .nombreVentaja{
+        text-align: center;
+        color: #9830dd;
+        font-size: 1.3rem;
+    }
+    
+    .descripVentaja{
+        color:#d0a5dd;
+        font-weight: bolder;
+        font-size: .8rem;
+    }
+    
+    #footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    }
+    
+    .derechos{
+        font-size: .7rem;
+    }
+    
+    footer ul li{
+        display: none;
+        margin: 0 5px 0 5px;
+    }
+    
+    footer img{
+        width: 2.5rem;
+        border-radius: 50%;
+        padding: 5px;
+    }
+   
+    
+    /**************** Hoja Producto *************/
+    
+    .gridContainerProduct{
+        display:grid;
+        grid-template-areas:
+        "header"
+        "menu"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: .1fr .5fr 2fr 1.5fr;
+        width: 100%;
+    }
+    
+    
+    .tituloProduct{
+        padding: .1rem;
+        font-size: 0.8rem;
+        color: #9830dd;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .tituloCategoria{
+         margin-bottom: 2rem;
+         color: #9830dd;
+    }
+    
+    .cardProduct{
+        display: flex;
+        margin-bottom: 1rem;
+        justify-content: space-around;
+    }
+
+    .imgProduct{
+        width: 5rem;
+        height: 4rem;
+    }
+
+
+/**************** Hoja Nosotros ********************/
+.gridContainerNosotros{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: .1fr .5fr 3fr .5fr;
+}
+
+.tituloNosotros{
+    margin: 2rem 1rem;
+    color: goldenrod;
+    font-weight: bold;
+    text-align: center;
+}
+
+#descripNosotros{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:center;
+    align-items: center;
+    margin: 1rem 5rem;
+}
+
+#descripEmprendimiento{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 1rem 5rem;
+}
+
+.historiaPersonal{
+    text-align: justify;
+    line-height: 1.3rem;
+}
+
+.historiaEmprendimiento{
+    text-align: justify;
+    line-height: 1.3rem;
+}
+
+.fotoPersonal{
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 2rem;
+}
+
+.fotoEmprendimiento{
+    width: 100%;
+    height: 30vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/******************* Hoja Ustedes******************/
+
+.gridContainerUstedes{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: .1fr .5fr 3fr .5fr;
+}
+
+.tituloFeedback{
+    color: #9830dd;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.categoriaFeedback{
+    color:#d0a5dd;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+#feedbackCard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items:center;
+    
+}
+
+.articuloFeedback {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px #d0a5dd ;
+    width: 13rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.avatar{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.grillaGaleria{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 100%;
+    gap: 10px;
+    justify-content: center;
+}
+
+.fotoGaleria{
+    width: auto;
+    height: 30vh;
+}
+/***********  Hoja Contacto ***************/
+.gridContainerContacto{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+}
+
+.tituloContacto{
+    text-align: center;
+    color: #9830dd;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    gap: 20px;
+    margin: 2rem auto 1rem;
+    background-color:#e8c4f3;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+input , textarea{
+    border: none;
+    height: 20px;
+}
+
+textarea{
+    min-height: 250px;
+    max-height: 350px;
+    max-width: 100%;
+}
+
+#boton{
+    font-size: 15px;
+    text-align: center;
+    color: #9830dd;
+    font-weight: bolder;
+}
+
+}
